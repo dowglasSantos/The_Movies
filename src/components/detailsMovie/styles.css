@@ -1,0 +1,89 @@
+.containerDetailsMovie {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.containerDetailsMovie img {
+    width: 400px;
+    border-radius: 15px;
+}
+
+.informationMovie {
+    width: 800px;
+    text-align: left;
+    padding: 0 40px 0 80px;
+}
+
+.informationMovie > h1 {
+    color: #ffbb00;
+    font-size: 40px;
+}
+
+.informationMovie > p {
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.evaluation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.evaluation > p {
+    font-size: 20px;
+    color: #ffbb00;
+}
+
+.evaluation>.button {
+    width: 100px;
+    height: 40px;
+    resize: none;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: #059f0a;
+    text-decoration: none;
+    line-height: 40px;
+    text-align: center;
+}
+
+.evaluation>.button:hover {
+    background-color: #037707;
+}
+
+
+@media only screen and (max-width: 1280px) {
+    .containerDetailsMovie img {
+        width: 280px;
+    }
+}
+
+@media only screen and (max-width: 1110px) {
+    .informationMovie {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .containerDetailsMovie {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .informationMovie {
+        text-align: center;
+        margin-top: 20px;
+        width: 100%;
+        padding: 0 40px;
+    }
+}

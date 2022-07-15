@@ -1,0 +1,15 @@
+.containerDetails {
+    text-align: center;
+    padding-bottom: 40px;
+    background-color: #000;
+}
+.containerDetails > h1 {
+    font-size: 40px;
+    padding: 40px 0 80px 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .containerDetails {
+        height: auto;
+    }
+}

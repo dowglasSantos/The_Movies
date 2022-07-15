@@ -1,0 +1,10 @@
+.containerHome {
+    text-align: center;
+    background-color: #000;
+    padding: 10px 20px 80px 10px;
+}
+
+.containerHome > h1 {
+    font-size: 42px;
+    padding: 40px 0 80px 0;
+}
