@@ -8,7 +8,7 @@ export const useDetails = (id) => {
         fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${APIKey}&language=en-US`)
         .then(resp => resp.json())
         .then(resp => setMovie(resp));
-    });
+    }, [id]);
 
     return movie;
 };

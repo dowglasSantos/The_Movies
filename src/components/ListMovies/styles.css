@@ -17,7 +17,7 @@
     flex-direction: column;
 }
 
-.movie img {
+.containerImage img {
     width: 180px;
     transition: 1s;
     border-radius: 15px;

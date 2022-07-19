@@ -10,12 +10,14 @@ export const ListMovies = ({movies}) => {
         <div className='containerPopularMovies'>
             {movies.map(movie => {
                 return (
-                    <ul className='listMovies' key={movie.id}>
-                        <li className='movie'>
-                            <Link to={`/details/${movie.id}`}><img src={`${img}${movie.poster_path}`} alt={movie.title} /></Link>
+                    <div className='listMovies' key={movie.id}>
+                        <div className='movie'>
+                            <div className='containerImage'>
+                                <Link to={`/details/${movie.id}`}><img src={`${img}${movie.poster_path}`} alt={movie.title} /></Link>
+                            </div>
                             <p>{movie.title}</p>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 );
             })}
         </div>

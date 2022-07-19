@@ -8,6 +8,8 @@ export const DetailsMovie = ({details}) => {
 
     const {poster_path, title, overview, vote_average} = details;
 
+    console.log(details)
+
     return (
         <div className='containerDetailsMovie'>
             <img src={`${img}${poster_path}`} alt='Deu ruim cuzão' />
